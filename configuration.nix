@@ -18,7 +18,6 @@
     ll = "ls -l";
     la = "ls -A";
     lla = "ls -lA";
-    vim = "nvim";
   };
 
   # Editor
@@ -79,11 +78,6 @@
     packages = with pkgs; [
     ];
   };
-
-  users.users.root.packages = with pkgs; [
-    git
-    neovim
-  ];
 
   users.groups.alec.gid = 1000;
 
